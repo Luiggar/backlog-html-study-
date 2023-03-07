@@ -1,5 +1,19 @@
 <!DOCTYPE html>
 <html>
+     <style>
+.coverandtext{
+  width: 1920px;
+  height: 1080px;
+  display: grid;
+  grid:
+    "sidebar body" 90%
+    / auto 0.8fr;
+  gap: 8px;
+}
+.sidebar{ grid-area: sidebar; 
+align-self: baseline;}
+.body{grid-area: body;}
+    </style>
     <head>
         <title>Random test</title>
     </head>
@@ -14,10 +28,10 @@
     </p>
 <div>
     <p>
-     <img src="http://www.retroplace.com/pics/ps2/packshots/70662--boku-no-natsuyasumi-2-umi-no-bouken-hen.png" alt="Cover art" style="float:left">
-    I <em>Realy</em> wanto to play 
+     <img class="sidebar" src="http://www.retroplace.com/pics/ps2/packshots/70662--boku-no-natsuyasumi-2-umi-no-bouken-hen.png" alt="Cover art" style="float:left">
+    <span class="body">I <em>Realy</em> wanto to play 
     <a href="https://www.backloggd.com/games/boku-no-natsuyasumi-2-umi-no-bouken-hen/" title="Backloggd page of the game">Boku no natsuyasumi 2</a>
-    but i am not quite sure i am good enough to not heva to rely on texthooking.
+        but i am not quite sure i am good enough to not heva to rely on texthooking.</span>
 </p>
     </div>
 <p>
